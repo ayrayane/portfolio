@@ -57,26 +57,26 @@ const Projects = () => {
     const projects = [
         {
             title: "Agent IA pour CI/CD",
-            description: "Automatisation intelligente des pipelines et optimisation des déploiements. Intégration d'IA pour analyser les logs et suggérer des fixes dans les workflows DevOps.",
+            description: "Conception d'un agent intelligent pour l'automatisation et l'analyse des pipelines de déploiement continu.",
             tags: ["Python", "OpenAI API", "GitLab CI", "Docker"],
             isWinner: false
         },
         {
             title: "Système de transcription IA",
-            description: "Application de transcription audio avec pipeline CI/CD automatisé. Interface web Vue.js et backend Python pour le traitement IA.",
+            description: "Application de transcription audio complète avec pipeline automatisé. Architecture robuste séparant traitement IA et interface utilisateur.",
             tags: ["Java", "Python", "Vue.js", "GitHub Actions"],
             isWinner: false
         },
         {
-            title: "Projet Balance Connectée",
-            description: "Application full-stack web + mobile pour la gestion de données en temps réel d'une balance connectée.",
-            tags: ["React", "React Native", "Node.js", "IoT"],
+            title: "Balance Connectée Web & App",
+            description: "Projet innovant combinant application web et mobile pour la gestion de données de santé en temps réel via IoT.",
+            tags: ["IoT", "Web", "Mobile", "Apprentissage"],
             isWinner: false
         },
         {
             title: "Hackathon Nuit de l’ISEN",
-            description: "Développement d’une application web en équipe dans un temps contraint sur un thème imposé.",
-            tags: ["React", "Express", "Teamwork"],
+            description: "3ème place au Hackathon de l'ISEN. Développement rapide d'une application web innovante sous contrainte de temps.",
+            tags: ["Web App", "Teamwork", "Agile"],
             isWinner: true
         }
     ];

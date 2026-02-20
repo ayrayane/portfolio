@@ -21,7 +21,7 @@ const Education = () => {
                         <div className="space-y-8 border-l-2 border-slate-800 ml-3 pl-8 relative">
 
                             <div className="relative">
-                                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-devops-accent"></span>
+                                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-devops-accent shadow-[0_0_10px_rgba(56,189,248,0.5)]"></span>
                                 <h3 className="text-xl font-bold text-white">Ingénieur en Électronique et Numérique</h3>
                                 <p className="text-emerald-400 font-medium">ISEN Toulon</p>
                                 <p className="text-slate-500 text-sm">2023 – 2026</p>
@@ -30,8 +30,8 @@ const Education = () => {
 
                             <div className="relative">
                                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-slate-600"></span>
-                                <h3 className="text-xl font-bold text-white">Classe Préparatoire aux Grandes Écoles (TSI)</h3>
-                                <p className="text-slate-400 font-medium">Lycée Rouvière</p>
+                                <h3 className="text-xl font-bold text-white">CPGE Technologie et Sciences de l'Ingénieur</h3>
+                                <p className="text-slate-400 font-medium">Emmanuel d'Alzon, Nîmes</p>
                                 <p className="text-slate-500 text-sm">2021 – 2023</p>
                             </div>
 
@@ -39,7 +39,15 @@ const Education = () => {
                                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-slate-600"></span>
                                 <h3 className="text-xl font-bold text-white">DUT Génie Mécanique et Productique</h3>
                                 <p className="text-slate-400 font-medium">IUT Lyon 1</p>
-                                <p className="text-slate-500 text-sm">2019 – 2021</p>
+                                <p className="text-slate-500 text-sm">2020 – 2021</p>
+                            </div>
+
+                            <div className="relative">
+                                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-slate-600"></span>
+                                <h3 className="text-xl font-bold text-white">Baccalauréat STI2D</h3>
+                                <p className="text-slate-400 font-medium">Lycée LaSalle, Avignon</p>
+                                <p className="text-slate-500 text-sm">2018 – 2020</p>
+                                <p className="text-slate-500 text-xs italic mt-1">Mention Bien</p>
                             </div>
                         </div>
                     </motion.div>
@@ -83,8 +91,9 @@ const Education = () => {
                                 <Sparkles className="mr-3 text-purple-400" /> Centres d'intérêt
                             </h2>
                             <div className="flex flex-wrap gap-3">
-                                {['Rugby (Joueur ISEN)', 'Sports mécaniques', 'Voyages Internationaux', 'Jeux Vidéo'].map((interest, idx) => (
-                                    <span key={idx} className="px-4 py-2 bg-slate-800 rounded-full text-slate-300 border border-slate-700 hover:border-purple-400 hover:text-white transition-colors cursor-default">
+                                {['Rugby (Joueur ISEN)', 'Sports mécaniques', 'Voyages (Grèce, Italie, Espagne, UK, Maroc, Tunisie, USA...)', 'Jeux Vidéo'].map((interest, idx) => (
+                                    <span key={idx} className="px-4 py-2 bg-slate-800 rounded-full text-slate-300 border border-slate-700 hover:border-purple-400 hover:text-white transition-colors cursor-default text-xs"
+                                    >
                                         {interest}
                                     </span>
                                 ))}

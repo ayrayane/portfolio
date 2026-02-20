@@ -42,10 +42,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ role, company, period, 
 
             {impact && (
                 <div className="bg-slate-800/50 p-3 rounded border border-slate-700/50">
-                    <p className="text-slate-300 text-xs font-semibold">Impact:</p>
-                    <div className="flex flex-wrap gap-2 mt-1">
+                    <p className="text-slate-200 text-xs font-bold mb-1 uppercase tracking-tight">Impact & Résultats :</p>
+                    <div className="flex flex-col gap-1 mt-1">
                         {impact.map((item, idx) => (
-                            <span key={idx} className="text-emerald-400 text-xs flex items-center">✔ {item}</span>
+                            <span key={idx} className="text-emerald-400 text-sm font-semibold flex items-center">
+                                <span className="mr-2 text-emerald-500">✔</span> {item}
+                            </span>
                         ))}
                     </div>
                 </div>
@@ -62,36 +64,38 @@ const Experience = () => {
             period: "Sept 2024 – Août 2026",
             location: "Ollioules, France",
             missions: [
-                "Développement et industrialisation d’outils logiciels internes",
-                "Mise en place et amélioration de pipelines CI/CD",
-                "Conteneurisation des applications et gestion des secrets via Vault",
-                "Coordination des livraisons de plugins"
+                "Développement et industrialisation d'outils logiciels internes pour l'atelier DevOps",
+                "Mise en place et amélioration de pipelines CI/CD avec automatisation des processus (build, test, déploiement)",
+                "Conteneurisation des applications et gestion des environnements de développement",
+                "Application des bonnes pratiques DevOps (qualité, sécurité, traçabilité)",
+                "Pilotage et coordination des livraisons de plugins destinés aux développeurs"
             ],
-            impact: ["Automatisation des processus", "Amélioration sécurité", "Optimisation déploiement"]
+            impact: ["Automatisation des processus industriels", "Sécurisation des secrets", "Industrialisation du cycle de vie logiciel"]
         },
         {
             role: "Stage Développeur Full Stack",
-            company: "Entreprise Tech (Simulé)",
+            company: "Leroy Merlin",
             period: "Mai 2025 – Août 2025",
             location: "Milan, Italie",
             missions: [
-                "Développement complet d’une application interne",
-                "Déploiement continu sur environnements Dev & Prod",
-                "Implémentation sécurisée des secrets"
+                "Développement full-stack d'une application interne, de la conception à la mise en production",
+                "Mise en place et gestion sécurisée des secrets via Vault (gestion des accès, rotation des secrets)",
+                "Déploiement continu sur 2 environnements (Dev/Prod) avec rotation sécurisée des secrets",
+                "Collaboration avec 4 équipes IT internationales dans un environnement agile"
             ],
-            impact: []
+            impact: ["Gestion sécurisée des secrets (Vault)", "Collaboration internationale agile", "Déploiement continu automatisé"]
         },
         {
             role: "Stage Assistant Pédagogique",
-            company: "École Internationale",
+            company: "École primaire",
             period: "Février 2019",
             location: "Londres, Royaume-Uni",
             missions: [
-                "Animation d’activités en anglais",
-                "Accompagnement d’élèves en difficulté",
-                "Développement des compétences interculturelles"
+                "Stage linguistique : accompagnement d'élèves en difficulté",
+                "Animation d'activités en anglais dans un environnement multiculturel",
+                "Développement des compétences en communication et en adaptation"
             ],
-            impact: []
+            impact: ["Maîtrise de l'anglais en immersion", "Adaptabilité multiculturelle"]
         }
     ];
 

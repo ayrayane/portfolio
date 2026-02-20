@@ -7,8 +7,20 @@ const Layout = () => {
 
     return (
         <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-devops-accent selection:text-white">
+            {/* Top Recruitment Banner - High Visibility */}
+            <div className="bg-devops-accent py-1.5 px-4 text-center overflow-hidden">
+                <div className="inline-flex items-center gap-4 animate-pulse">
+                    <span className="text-slate-950 text-[10px] md:text-xs font-black uppercase tracking-[0.2em]">
+                        🚀 ACTUELLEMENT À LA RECHERCHE D'UN CDI DEVSECOPS
+                    </span>
+                    <a href="#contact" className="bg-slate-950 text-white text-[9px] md:text-xs px-2 py-0.5 rounded font-bold hover:bg-slate-800 transition-colors uppercase">
+                        Me recruter
+                    </a>
+                </div>
+            </div>
+
             {/* Navbar */}
-            <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+            <nav className="sticky top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex-shrink-0 font-bold text-xl tracking-tighter text-devops-accent">
@@ -21,6 +33,7 @@ const Layout = () => {
                                 <a href="#about" className="hover:text-devops-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">À propos</a>
                                 <a href="#skills" className="hover:text-devops-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Compétences</a>
                                 <a href="#experience" className="hover:text-devops-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Expérience</a>
+                                <a href="#education" className="hover:text-devops-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Formation</a>
                                 <a href="#projects" className="hover:text-devops-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Projets</a>
                                 <a href="#contact" className="px-4 py-2 rounded-md text-sm font-medium bg-devops-accent text-white hover:bg-sky-600 transition-colors">Me contacter</a>
                             </div>
@@ -45,6 +58,7 @@ const Layout = () => {
                             <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-devops-accent">À propos</a>
                             <a href="#skills" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-devops-accent">Compétences</a>
                             <a href="#experience" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-devops-accent">Expérience</a>
+                            <a href="#education" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-devops-accent">Formation</a>
                             <a href="#projects" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-devops-accent">Projets</a>
                             <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium bg-devops-accent/10 text-devops-accent">Me contacter</a>
                         </div>

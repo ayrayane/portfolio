@@ -9,8 +9,10 @@ export default {
             colors: {
                 devops: {
                     dark: '#0f172a', // slate-900
-                    light: '#cbd5e1', // slate-300
-                    accent: '#0ea5e9', // sky-500
+                    light: '#94a3b8', // slate-400
+                    accent: '#38bdf8', // sky-400
+                    success: '#10b981', // emerald-500
+                    surface: '#1e293b', // slate-800
                 }
             },
             fontFamily: {
